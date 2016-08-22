@@ -1,0 +1,27 @@
+{
+  "name": "materal-form",
+  "version": "1.0.0",
+  "description": "Material form in Riot.js",
+  "main": "index.js",
+  "scripts": {
+    "test": ""
+  },
+  "author": "Varun Khanna",
+  "license": "MIT License",
+  "devDependencies": {
+    "babel-core": "^6.13.2",
+    "babel-loader": "^6.2.5",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-install": "^0.6.0",
+    "gulp-minify": "0.0.14",
+    "gulp-riot": "^0.5.2",
+    "gulp-uglify": "^2.0.0",
+    "pump": "^1.0.1",
+    "require-dir": "^0.3.0",
+    "run-sequence": "^1.2.2"
+  },
+  "dependencies": {
+    "riot": "^2.5.0"
+  }
+}

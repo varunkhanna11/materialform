@@ -1,0 +1,33 @@
+<html>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/riot/2.5.0/riot.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.2.0/material.indigo-pink.min.css">
+  <script defer src="https://code.getmdl.io/1.2.0/material.min.js"></script>
+  <script src=".\scripts\riot-tags.js"></script>
+
+</head>
+<body>
+  <md-form>
+    <md-form-item>
+      <md-textbox id="fname" label="First Name" data-item="firstname" isrequired="true" errormsginvalid="Not a valid value" regex="^[\\s\t\r\n]*[A-Z,a-z -]+$" errormsgreq="First Name is mandatory" maxlength=40></mt-textbox>
+    </md-form-item>
+    <md-form-item>
+      <md-textbox id="lname" label="Last Name" data-item="lastname" isrequired="true" errormsginvalid="Not a valid value" regex="^[\\s\t\r\n]*[A-Z,a-z -]+$" errormsgreq="Last Name is mandatory" maxlength=40></mt-textbox>
+    </md-form-item>
+    <md-form-item>
+      <md-checkbox id="cbdAgree" label="I Agrees" checked="checked" errormsgreq="This field is required" isrequired="true"></md-checkbox>
+    </md-form-item>
+    <md-form-item>
+<md-submit-button id="submit" label="Submit It"></md-submit-button>
+    </md-form-item>
+</md-form>
+
+  <script>
+  var mdFormValidator = new MdFormValidator()
+riot.mount('md-form');
+</script>
+</body>
+
+</html>
