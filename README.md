@@ -2,6 +2,7 @@
 This is simple reusable UI component thant can be used to generate dynamic material forms with all validation in one place.
 
 ## Code Example
+```
 <md-form>
     <md-form-item>
       <md-textbox id="fname" label="First Name" data-item="firstname" isrequired="true" errormsginvalid="Not a valid value" regex="^[\\s\t\r\n]*[A-Z,a-z -]+$" errormsgreq="First Name is mandatory" maxlength=40></mt-textbox>
@@ -16,7 +17,7 @@ This is simple reusable UI component thant can be used to generate dynamic mater
 <md-submit-button id="submit" label="Submit It"></md-submit-button>
     </md-form-item>
 </md-form>
-
+```
 
 ## Motivation
 
@@ -30,8 +31,9 @@ Right now this form supports three material compnents -
 3) submit button
 
 Taking example of textbox
+```
       <md-textbox id="lname" label="Last Name" data-item="lastname" isrequired="true" errormsginvalid="Not a valid value" regex="^[\\s\t\r\n]*[A-Z,a-z -]+$" errormsgreq="Last Name is mandatory" maxlength=40></mt-textbox>
-
+```
 This generates a awesome looking material textbox with is-required validation, regex validation, length validation and label. As these fields are part of riot tag(which converts to html tag) it can be used eaisly with any application irrespective of backend technology stack.
 
 It uses gulp to compile riot.js tags to js which is used on client side to render tags. 
