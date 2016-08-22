@@ -40,10 +40,10 @@ It uses gulp to compile riot.js tags to js which is used on client side to rende
 
 ## Required Libraries
 
-It require following libraries 
-1)  Jquery library 
-2)  Riot js
-3)  Google Material Design Library
+It require following libraries <br/> 
+1)  Jquery library <br/>
+2)  Riot js <br/>
+3)  Google Material Design Library <br/>
 
 # Reference
 Check the test.html for demo
